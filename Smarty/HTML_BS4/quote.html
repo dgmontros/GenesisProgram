@@ -48,7 +48,6 @@
 		menu-vertical-hide		= hidden, open on click
 		
 		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg  "
 	-->
 	<!--body class="smoothscroll enable-animation">
 
@@ -136,7 +135,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images/R2.png" alt="" />
+							<img src="assets/images/R2.png" alt="Rocket Elevators Blue and White logo" />
 						</a>
 
 						<!-- 
@@ -156,42 +155,36 @@
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
-										<a href="../HTML_BS4/index.html#home">
+										<a id="home-nav" href="#home">
 											HOME
 										</a>
 									</li>
 									<li><!-- SERVICES -->
-										<a href="../HTML_BS4/index.html#services">
+										<a id="services-nav" href="#services">
 											SERVICES
 										</a>
 									</li>
 									<li><!-- PORTFOLIO -->
-										<a href="../HTML_BS4/index.html#portfolio">
+										<a id="portfolio-nav" href="#portfolio">
 											PORTFOLIO
 										</a>
 									</li>
 									<li><!-- NEWS -->
-										<a href="../HTML_BS4/index.html#news">
+										<a id="news-nav" href="#news">
 											NEWS
 										</a>
 									</li>
 									<li><!-- OVERVIEW -->
-										<!--<a href="#overview">
-											OVERVIEW
-										</a>-->
+										
+										</a>
 									</li>
 									<li><!-- CLIENTS -->
-										<a href="../HTML_BS4/index.html#clients">
+										<a id="clients-nav" href="#clients">
 											CLIENTS
 										</a>
 									</li>
-									<li><!-- BLOG -->
-										<!--<a class="external" href="blog-default-aside-left.html">
-											BLOG
-										</a>
-									</li>
 									<li><!-- CONTACT -->
-										<a href="#contact-nav">
+										<a id="contact-nav" href="#contact">
 											CONTACT
 										</a>
 									</li>
@@ -202,189 +195,117 @@
 
 					</div>
 				</header>
+				<!-- /Top Nav -->
+
 			</div>
 
+			<!-- BUTTON CALLOUT -->
 
-<!-- PORTFOLIO -->
-<section id="portfolio">
-	<div class="container">
+			<hr class="m-0" /><!-- 1px line separator -->
 
-		<div class="heading-title heading-dotted text-center">
-			<h2>OUR RESIDENTIAL PORTFOLIO</h2>
+			<a href="" class="btn btn-xlg btn-blue
+			 fs-20 fullwidth m-0 rad-0 p-20">
+				<span class="font-lato fs-30">
+					<strong>Quote Builder</strong>
+				</span>
+			</a>
+        
+			<!-- FINISH CODE FOR JQUERY CALCULATOR FORM-->
+<div class="row"></div>
+<div class="col-md-10 col-sm-10">
+	<h3>Please select one of the below building types,<br> then complete all form fields:</h3>
+
+
+<form id ="quote-form" action="php/contact.php" method="post" enctype="multipart/form-data">
+
+<fieldset>
+	<!--input type="hidden"  nam="action" value="contact_send" /-->
+
+	<label class="radio">
+		<input type="radio" name ="bldg-btn" value="residential" checked="checked">
+		<i></i>Residential</label>
+
+	<label class="radio">
+		<input type="radio" name ="bldg-btn" value="commercial" checked="checked">
+		<i></i>Commercial</label>
+		
+	<label class="radio">
+		<input type="radio" name ="bldg-btn" value="corporate" checked="checked">
+		<i></i>Corporate</label>
+		
+	<label class="radio">
+		<input type="radio" name ="bldg-btn" value="hybrid" checked="checked">
+		<i></i>Hybrid</label>
+
+	</fieldset>
+</form>
+
+            <!-- Quote Builder Form >
+            
+              <div class="container">       
+            <script src="draftQuote.js"></script>
+                </div>
+
+<  Quote builder form -->
+
+<!--INPUT CATEGORIES-->		
+	<section id='quote-inputs' class='show_sec center'>
+		<div>
+			<label for="apartments">Number of Apartments</label>
+			<input type="number" id="apartments" name="apartments">
 		</div>
+		<div>
+			<label for = "floors">Number of Floors:</label>
+			<input type="number" id="floors" name="floors">
 
-		<!--<div class="text-center">
-			<ul class="nav nav-pills mix-filter mb-60">
-				<li data-filter="all" class="filter active"><a href="#">All</a></li>
-				<li data-filter="development" class="filter"><a href="#">Development</a></li>
-				<li data-filter="photography" class="filter"><a href="#">Photography</a></li>
-				<li data-filter="design" class="filter"><a href="#">Design</a></li>
-			</ul>
-		</div-->
-
-	</div>
-
-	<div id="portfolio" class="portfolio-nogutter">
-
-			<div class="row mix-grid">
-
-				<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
-
-					<div class="item-box">
-						<figure>
-							<span class="item-hover">
-								<span class="overlay dark-5"></span>
-								<span class="inner">
-
-									<!-- lightbox -->
-									<a class="ico-rounded lightbox" href="assets/images/PortBeigePanels.jpeg" data-plugin-options='{"type":"image"}'>
-										<span class="fa fa-plus fs-20"></span>
-									</a>
-
-									<!-- details -->
-									</span>
-							</span>
-
-							<img class="img-fluid" src="assets/images/POrtWhiteAptBldgTumon.jpeg" width="600" height="399" alt="">
-						</figure>
-
-						<div class="item-box-desc">
-							<h3>Residential Glamour</h3>
-							<ul class="list-inline categories m-0">
-								<li><a href="residential.html">Custom solutions</a></li>
-							</ul>
-						</div>
-
-					</div>
-
-				</div><!-- /item -->
-
-
-				<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-					<div class="item-box">
-						<figure>
-							<span class="item-hover">
-								<span class="overlay dark-5"></span>
-								<span class="inner">
-
-									<!-- lightbox -->
-									<a class="ico-rounded lightbox" href="assets/images/PortBurjDoorOptions.jpeg" data-plugin-options='{"type":"image"}'>
-										<span class="fa fa-plus fs-20"></span>
-									</a>
-
-									<!-- details -->
-									</span>
-							</span>
-
-							<img class="img-fluid" src="assets/images/UseBurjVator.jpg" width="600" height="399" alt="">
-						</figure>
-
-						<div class="item-box-desc">
-							<h3>Global Influence</h3>
-							<ul class="list-inline categories m-0">
-								<li><a href="commercial.html">International Accolades</a></li>
-								
-							</ul>
-						</div>
-
-					</div>
-
-				</div><!-- /item -->
-
-				<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-					<div class="item-box">
-						<figure>
-							<span class="item-hover">
-								<span class="overlay dark-5"></span>
-								<span class="inner">
-
-									<!-- lightbox -->
-									<a class="ico-rounded lightbox" href="assets/images/PortOrbOnOrb.jpeg" data-plugin-options='{"type":"image"}'>
-										<span class="fa fa-plus fs-20"></span>
-									</a>
-
-									<!-- details -->
-									</span>
-							</span>
-
-							<img class="img-fluid" src="assets/images/UseSleepVator.jpg" width="600" height="399" alt="">
-						</figure>
-
-						<div class="item-box-desc">
-							<h3>Unique Projects</h3>
-							<ul class="list-inline categories m-0">
-								<li><a href="#contact">Bringing your ideas to life</a></li>
-							</ul>
-						</div>
-
-					</div>
-
-				</div><!-- /item -->
-
-<!-- /item -->
-
-			
-
-				<div class="col-md-3 col-sm-3 mix design"> <!-- item -->
-
-					<div class="item-box">
-						<figure>
-							<span class="item-hover">
-								<span class="overlay dark-5"></span>
-								<span class="inner">
-
-									<!-- lightbox -->
-									<a class="ico-rounded lightbox" href="assets/images/PortHomeRocketDarkWood.jpeg" data-plugin-options='{"type":"image"}'>
-										<span class="fa fa-plus fs-20"></span>
-									</a>
-
-									<!-- details -->
-									</span>
-							</span>
-
-							<img class="img-fluid" src="assets/images/UsePodVator.jpg" width="600" height="399" alt="">
-						</figure>
-
-						<div class="item-box-desc">
-							<h3>Home Innovation</h3>
-							<ul class="list-inline categories m-0">
-								<li><a href="residential.html">Designs for Living</a></li>
-								<!--li><a href="#">AWARD 3 MONTH YEAR</a></li-->
-							</ul>
-						</div>
-
-					</div>
-
-				</div><!-- /item -->
-			</div>
 		</div>
-			</div>
-	</div>
-</section>
-<!-- /PORTFOLIO -->
+		<div>
+			<label for = "occupants">Number of Occupants per Floor:</label>
+			<input type="number" id="occupants" name="occupants">
 
-<!-- Services -->
-<section id="services">
-	<div class="container">
-
-		<div class="row justify-content-center">
-			<div class="col-sm-4">
-				<img class="img-fluid" src="assets/images/UseFancyAptBldgVator.jpg" alt="img" />
-				<h3 class="mt-5">Get a quote today</h3>
-				<p>Houses to multiresidential.  Corporate or commercial.  One floor to one hundred, we have your energy-efficient, low maintenance design.  Click below for your custom quote.</p>
-				<a href="quote.html" class="btn btn-danger">Instant Quote</a>
-			</div>
+		</div>
+		<div>
+			<label for="parking">Number of Parking Spaces</label>
+			<input type="number" id="parking" name="parking">
+		</div>
+		
+		<div>
+			<label for="basements">Number of Basements</label>
+			<input type="number" id="basements" name="basements">
+		</div>
+		<div>
+			<label for = "companies">Number of Floors:</label>
+			<input type="number" id="companies" name="companies">
 
 		</div>
 
-	</div>
-</section>
-<!-- /Services -->      
+		<div>
+			<label for="corporations">Number of Corporations</label>
+			<input type="number" id="corporations" name="corporations">
 
+		</div>
+		<div>
+			<label for = "businessHours">Number of Floors:</label>
+			<input type="number" id="businessHours" name="businessHours">
+
+		</div>
+		<div>
+			<label for = "elevators">Number of Elevators:</label>
+			<input type="number" id="elevators" name="elevators">
+
+		</div>
+	</section>
+
+	</fieldset>
+
+</form>
+
+<div class="row">
+	<div class="col-md-30">
+		<a class="btn btn-blue btn-lg" href="#">NEXT <i class="fa fa-angle-right"></i></a> 		</div>
+</div>
 			<!-- CONTACT -->
-			<section id="contact-nav">
+			<section id="contact">
 				<div class="container">
 
 					<header class="text-center mb-60">
@@ -443,7 +364,7 @@
 							<!-- Alert Mandatory -->
 							<div id="alert_mandatory" class="alert alert-danger mb-30">
 								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+								<strong>Sorry!</strong> Please complete all mandatory (*) fields!
 							</div><!-- /Alert Mandatory -->
 
                             <!--Contact Us form-->
@@ -516,11 +437,14 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-dark"><i class="fa fa-check"></i> SEND MESSAGE</button>
-									</div>
+										<button type="submit" class="btn btn-blue" onlick = "confirmationAlert()"><i class="fa fa-check"></i> SEND MESSAGE</button>
+								<script>
+									function confirmationAlert() {
+										alert("Thank you for your inquiry. We will respond as soon as possible.");
+									}
+								</script>	
 								</div>
-							<!-- </form> -->
-
+							</div>
 						</div>
 						<!-- /FORM -->
 
@@ -666,28 +590,6 @@
 		-->
 		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
 		<script src="assets/plugins/gmaps.js"></script>
-		<script>
-
-			jQuery(document).ready(function(){
-
-				/**
-					@BASIC GOOGLE MAP
-				**/
-				var map2 = new GMaps({
-					div: '#map2',
-					lat: -12.043333,
-					lng: -77.028333,
-					scrollwheel: false
-				});
-
-				var marker = map2.addMarker({
-					lat: -12.043333,
-					lng: -77.028333,
-					title: 'Company, Inc.'
-				});
-
-			});
-
-		</script>
+		
 	</body>
 </html>

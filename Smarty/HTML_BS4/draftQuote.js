@@ -1,21 +1,49 @@
 
-/*function showFields() {
-if(quote.getElementById(corporate).checked)
-quote.getElementById(corporate).style.display=figureoutthisvalue;
-}
-else if {
-  (quote.getElementById(residential).checked)
-quote.getElementById(residential).style.display=figureoutthisvalue;
-}
-else if {(quote.getElementById(commerical).checked)
-quote.getElementById(commercial).style.display=figureoutthisvalue;
-}
-else if{
-  (quote.getElementById(hybrid).checked)
-quote.getElementById(hybrid).style.display=figureoutthisvalue;
+
+
+
+function selectForm() {
+
 }
 
-onClick=showFields();
+
+
+
+
+
+$(document).ready(function () {
+  $('.building_type').hide();
+  
+  $('#selectMe').change(function () {
+      $('.building_type').hide();
+      $('#'+$(this).val()).show();
+  })
+});
+
+var residentialForm = "residential-form"
+var commercialForm = "commercial-form"
+var corporateForm = "corporate-form"
+var hybridForm = "hybrid-form"
+
+
+
+/*
+
+selectBuilding.onchange = selectForm() {
+  if selectBuilding.value=residential {
+    quote.getElementById(residential-form)
+}
+  else if selectBuilding.value=commercial {
+    quote.getElementById(commercial-form)
+}
+  else if selectBuilding.value=corporate {
+    quote.getElementById(corporate-form)
+}
+  else if selectBuilding.value=hybrid {
+    quote.getElementById(hybrid-form)
+}
+
+selectForm();
 
 
 
@@ -94,72 +122,7 @@ quoteFormElements: [
 */
 
 
-GOOD CODE ABOVE
 
-
-/*<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-var subjectObject = {
-  "Front-end": {
-    "HTML": ["Links", "Images", "Tables", "Lists"],
-    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
-    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
-  },
-  "Back-end": {
-    "PHP": ["Variables", "Strings", "Arrays"],
-    "SQL": ["SELECT", "UPDATE", "DELETE"]
-  }
-}
-window.onload = function() {
-  var subjectSel = document.getElementById("subject");
-  var topicSel = document.getElementById("topic");
-  var chapterSel = document.getElementById("chapter");
-  for (var x in subjectObject) {
-    subjectSel.options[subjectSel.options.length] = new Option(x, x);
-  }
-  subjectSel.onchange = function() {
-    //empty Chapters- and Topics- dropdowns
-    chapterSel.length = 1;
-    topicSel.length = 1;
-    //display correct values
-    for (var y in subjectObject[this.value]) {
-      topicSel.options[topicSel.options.length] = new Option(y, y);
-    }
-  }
-  topicSel.onchange = function() {
-    //empty Chapters dropdown
-    chapterSel.length = 1;
-    //display correct values
-    var z = subjectObject[subjectSel.value][this.value];
-    for (var i = 0; i < z.length; i++) {
-      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-    }
-  }
-}
-</script>
-</head>   
-<body>
-
-<h1>Cascading Dropdown Example</h1>
-
-<form name="form1" id="form1" action="/action_page.php">
-Subjects: <select name="subject" id="subject">
-    <option value="" selected="selected">Select subject</option>
-  </select>
-  <br><br>
-Topics: <select name="topic" id="topic">
-    <option value="" selected="selected">Please select subject first</option>
-  </select>
-  <br><br>
-Chapters: <select name="chapter" id="chapter">
-    <option value="" selected="selected">Please select topic first</option>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">  
-</form>
-
-
-*/
 
 
 $(function() {

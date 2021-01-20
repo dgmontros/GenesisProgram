@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Rocket Elevators - Multipurpose + Admin</title>
+		<title>Rocket Elevators</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -16,9 +16,7 @@
 		<!-- CORE CSS -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-		<!-- REVOLUTION SLIDER -->
-		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+	
 
 		<!-- THEME CSS -->
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
@@ -52,51 +50,12 @@
 	<!--body class="smoothscroll enable-animation">
 
 		<-- SLIDE TOP -->
-		<!--div id="slidetop">
-
-			<div class="container">
-				
-				<div class="row">
-
-					<div class="col-md-4">
-						<h6><i class="icon-heart"></i> WHY ROCKET?</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
-					</div>
-
-					<div class="col-md-4">
-						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
-						<ul class="list-unstyled">
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-4">
-						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
-						<ul class="list-unstyled">
-							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
-							<li><b>Phone:</b> 1-800-565-2390</li>
-							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-			</div>
-
-			<a class="slidetop-toggle" href="#">< toggle button ></a>
-
-		<--/div-->
-		<!-- /SLIDE TOP -->
 
 
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
+			<!--
 				AVAILABLE HEADER CLASSES
 
 				Default nav height: 96px
@@ -134,16 +93,10 @@
 						</button-->
 
 						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="#top">
+						<a class="logo float-left scrollTo" href="../HTML_BS4/index.html">
 							<img src="assets/images/R2.png" alt="Rocket Elevators Blue and White logo" />
 						</a>
 
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
 
@@ -155,7 +108,7 @@
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
-										<a id="home-nav" href="#home">
+										<a id="home-nav" href="../HTML_BS4/index.html">
 											HOME
 										</a>
 									</li>
@@ -195,50 +148,99 @@
 
 					</div>
 				</header>
-				<!-- /Top Nav -->
 
 			</div>
 
+			
 			<!-- BUTTON CALLOUT -->
+			<hr class="m-0" />
 
-			<hr class="m-0" /><!-- 1px line separator -->
+			<section id="selectProject">
+				<div class="container">
 
-			<a href="" class="btn btn-xlg btn-blue
-			 fs-20 fullwidth m-0 rad-0 p-20">
-				<span class="font-lato fs-30">
-					<strong>Quote Builder</strong>
-				</span>
-			</a>
-        
-			<!-- FINISH CODE FOR JQUERY CALCULATOR FORM-->
-<div class="row"></div>
-<div class="col-md-10 col-sm-10">
-	<h3>Please select one of the below building types,<br> then complete all form fields:</h3>
+					<header class="text-center mb-20">
+						<h2>Please Select a Building Type:  </h2>
+
+						<select id="selectBuilding" onchange=selectForm>
+						<option value="select">-select one-</option>
+						<option value="residential">Residential</option>
+						<option value="commercial">Commercial</option>
+						<option value="corporate">Corporate</option>
+						<option value="hybrid">Hybrid</option>
+					</select>
+					</header>
+					<div class="row">
+						
+						<script>  
+	{  
+		var residential = selectBuilding.type(residential);
+		var residentialOuput = ["number-of-apartments", "number-of-floors", "number-of-basements"]
+	};
+{  
+		var commercial = selectBuilding.type(commercial)
+		var commercialOutput = ["number-of-floors", "number-of-basements", "number-of-companies", "number-of-parking-spots", "number-of-elevators"]
+	};
+{  
+		var corporate = selectBuilding.type(corporate);
+		var corporateOutput= ["number-of-floors", "number-of-basements", "number-of-parking-spots", "number-of-corporations", "maximum-occupancy"]
+	};
+{  
+		var hybrid = selectBuilding.type(hybrid);
+		var hybridOutput = ["number-of-floors", "number-of-basements", "number-of-companies","number-of-parking-spots", "maximum-occupancy", "business-hours"]
+	}
+
+selectBuilding.onchange = selectForm() {
+  if selectBuilding.type=residential {
+    quote.getElementById(residential)
+}
+  else if selectBuilding.type=commercial {
+    quote.getElementById(commercial)
+}
+  else if selectBuilding.type=corporate {
+    quote.getElementById(corporate)
+}
+  else if selectBuilding.type=hybrid {
+    quote.getElementById(hybrid)
+};
+
+selectForm();
+
+						</script>
+				
+
+			<section id="selectService">
+				<div class="container">
+
+					<header class="text-center mb-20">
+						<h2>Please Select a Quality Level:  </h2>
+						<hr />
+						<select id="selectQuality">
+						<option value="select"> -select one-</option>
+						<option value="standard">Standard</option>
+						<option value="premium">Premium</option>
+						<option value="excelium">Excelium</option>
+					</select>
+					</header>
+					<div class="row">
+					</select>
+					<!-- FINISH CODE FOR BUILDING AND QUALITY SELECTION-->
 
 
-<form id ="quote-form" action="php/contact.php" method="post" enctype="multipart/form-data">
 
-<fieldset>
-	<!--input type="hidden"  nam="action" value="contact_send" /-->
-
-	<label class="radio">
-		<input type="radio" name ="bldg-btn" value="residential" checked="checked">
-		<i></i>Residential</label>
-
-	<label class="radio">
-		<input type="radio" name ="bldg-btn" value="commercial" checked="checked">
-		<i></i>Commercial</label>
-		
-	<label class="radio">
-		<input type="radio" name ="bldg-btn" value="corporate" checked="checked">
-		<i></i>Corporate</label>
-		
-	<label class="radio">
-		<input type="radio" name ="bldg-btn" value="hybrid" checked="checked">
-		<i></i>Hybrid</label>
-
-	</fieldset>
-</form>
+ <div id="residential" class="building_type" >
+   
+</div>
+    
+ <div id="commercial" class="building_type" >
+	
+ </div>
+ <div id="corporate" class="building_type" >
+   
+</div>
+<div id="Hybrid" class="building_type" >
+  
+</div>
+	
 
             <!-- Quote Builder Form >
             
@@ -246,254 +248,105 @@
             <script src="draftQuote.js"></script>
                 </div>
 
-<  Quote builder form -->
+< Quote builder form -->
 
-<!--INPUT CATEGORIES-->		
-	<section id='quote-inputs' class='show_sec center'>
-		<div>
-			<label for="apartments">Number of Apartments</label>
-			<input type="number" id="apartments" name="apartments">
-		</div>
-		<div>
-			<label for = "floors">Number of Floors:</label>
-			<input type="number" id="floors" name="floors">
+<!--INPUT CATEGORIES-->	
+		<!--RESIDENTIAL-->	
+<section id="residential-form" class="conditional-form hidden">
+	<label for="num-apartments">Number of Apartments:
+	<input type="text" value="10" name="residential-options" id="num-apartments" min="1" max="1000" class="form-control stepper">
+	</label>
+	
+	<label for="num-floors">Number of Floors:
+		<input type="text" value="2" name="residential-options" id="num-floors" min="1" max="100" class="form-control stepper">
+	</label>
+	
+	<label for="num-basements">Number of Basements:
+		<input type="text" value="1" name="residential-options" id="num-basements" min="0" max="10" class="form-control stepper">
+	</label>	
 
-		</div>
-		<div>
-			<label for = "occupants">Number of Occupants per Floor:</label>
-			<input type="number" id="occupants" name="occupants">
+	<!--END RESIDENTIAL-->	
 
-		</div>
-		<div>
-			<label for="parking">Number of Parking Spaces</label>
-			<input type="number" id="parking" name="parking">
-		</div>
+	<!--START COMMERCIAL-->	
+<section id="commercial-form" class="conditional-form hidden">
+	<label for="num-businesses">Number of Distinct Businesses:
+	<input type="text" value="10" name="commercial-options" id="num-businesses" min="0" max="500" class="form-control stepper">
+	</label>
+	
+	<label for="num-floors">Number of Floors:
+		<input type="text" value="2" name="commercial-options" id="num-floors" min="0" max="100" class="form-control stepper">
+	</label>
+	
+	<label for="num-basements">Number of Basements:
+		<input type="text" value="1" name="commercial-options" id="num-basements" min="0" max="10" class="form-control stepper">
+	</label>	
 		
-		<div>
-			<label for="basements">Number of Basements</label>
-			<input type="number" id="basements" name="basements">
-		</div>
-		<div>
-			<label for = "companies">Number of Floors:</label>
-			<input type="number" id="companies" name="companies">
+	<label for="num-parking">Number of Parking Spaces:
+		<input type="text" value="50" name="commercial-options" id="num-parking" min="0" max="1000" class="form-control stepper">
+		</label>
+		
+		<label for="num-elevators">Number Elevator Cages per Floor:
+			<input type="text" value="1" name="commercial-options" id="num-elevators" min="1" max="20" class="form-control stepper">
+		</label>
 
-		</div>
+	<!--END COMMERCIAL-->	
 
-		<div>
-			<label for="corporations">Number of Corporations</label>
-			<input type="number" id="corporations" name="corporations">
+	<!--START CORPORATE -->	
+<section id="corporate-form" class="conditional-form hidden">
+	<label for="num-businesses">Number of Distinct Businesses:
+	<input type="text" value="10" name="corporate-options" id="num-businesses" min="0" max="500" class="form-control stepper">
+	</label>
+	
+	<label for="num-floors">Number of Floors:
+		<input type="text" value="2" name="corporate-options" id="num-floors" min="0" max="100" class="form-control stepper">
+	</label>
+	
+	<label for="num-basements">Number of Basements:
+		<input type="text" value="1" name="corporate-options" id="num-basements" min="0" max="10" class="form-control stepper">
+	</label>	
+		
+	<label for="num-parking">Number of Parking Spaces:
+		<input type="text" value="50" name="corporate-options" id="num-parking" min="0" max="1000" class="form-control stepper">
+		</label>
+		
+		<label for="max-occupants">Maximum Individual Occupants Per Floor:
+			<input type="text" value="1" name="corporate-options" id="max-occupants" min="1" max="1000" class="form-control stepper">
+		</label>
 
-		</div>
-		<div>
-			<label for = "businessHours">Number of Floors:</label>
-			<input type="number" id="businessHours" name="businessHours">
+	<!--END CORPORATE-->
 
-		</div>
-		<div>
-			<label for = "elevators">Number of Elevators:</label>
-			<input type="number" id="elevators" name="elevators">
+	<!--START HYBRID-->	
+	<section id="hybrid-form" class="conditional-form hidden">
+		<label for="num-businesses">Number of Distinct Businesses:
+		<input type="text" value="10" name="hybrid-options" id="num-businesses" min="0" max="500" class="form-control stepper">
+		</label>
+		
+		<label for="num-floors">Number of Floors:
+			<input type="text" value="2" name="hybrid-options" id="num-floors" min="0" max="100" class="form-control stepper">
+		</label>
+		
+		<label for="num-basements">Number of Basements:
+			<input type="text" value="1" name="hybrid-options" id="num-basements" min="0" max="10" class="form-control stepper">
+		</label>	
+			
+		<label for="num-parking">Number of Parking Spaces:
+			<input type="text" value="50" name="hybrid-options" id="num-parking" min="0" max="1000" class="form-control stepper">
+			</label>
+			
+			<label for="max-occupants">Maximum Individual Occupants Per Floor:
+				<input type="text" value="1" name="hybrid-options" id="max-occupants" min="1" max="1000" class="form-control stepper">
+			</label>
+			
+			<label for="hrs-activity">Daily Hours of Occupation:
+				<input type="text" value="1" name="hybrid-options" id="hrs-activity" min="0" max="24" class="form-control stepper">
+			</label>
+	<!--END HYBRID-->	
 
-		</div>
 	</section>
 
-	</fieldset>
-
-</form>
-
-<div class="row">
-	<div class="col-md-30">
-		<a class="btn btn-blue btn-lg" href="#">NEXT <i class="fa fa-angle-right"></i></a> 		</div>
-</div>
-			<!-- CONTACT -->
-			<section id="contact">
-				<div class="container">
-
-					<header class="text-center mb-60">
-						<h2>Contact Us Today</h2>
-						<p class="lead font-lato">We are ready to engineer your residential or corporate design.</p>
-						<hr />
-					</header>
-
-
-					<div class="row">
-
-						<!-- FORM -->
-						<div class="col-md-8 col-sm-8">
-
-							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
-
-							
-							<!--
-								MESSAGES
-								
-									How it works?
-									The form data is posted to php/contact.php where the fields are verified!
-									php.contact.php will redirect back here and will add a hash to the end of the URL:
-										#alert_success 		= email sent
-										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
-										#alert_mandatory	= email not sent - required fields empty
-										Hashes are handled by assets/js/contact.js
-
-									Form data: required to be an array. Example:
-										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
-										Also, add `required` to input fields if is a mandatory field. 
-										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
-									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
-												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
-									WARNING! Do not change the `email` and `name`!
-												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-							-->
-
-							<!-- Alert Success -->
-							<div id="alert_success" class="alert alert-success mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Thank You!</strong> Your message successfully sent!
-							</div><!-- /Alert Success -->
-
-
-							<!-- Alert Failed -->
-							<div id="alert_failed" class="alert alert-danger mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>[SMTP] Error!</strong> Internal server error!
-							</div><!-- /Alert Failed -->
-
-
-							<!-- Alert Mandatory -->
-							<div id="alert_mandatory" class="alert alert-danger mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Sorry!</strong> Please complete all mandatory (*) fields!
-							</div><!-- /Alert Mandatory -->
-
-                            <!--Contact Us form-->
-							<!--<form action="php/contact.php" method="post" enctype="multipart/form-data"-->
-								<fieldset>
-									<input type="hidden" name="action" value="contact_send" />
-
-									<div class="row">
-										<div class="col-md-4">
-											<label for="contact:name">Full Name *</label>
-											<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:email">E-mail Address *</label>
-											<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:phone">Phone</label>
-											<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
-										</div>
-									</div>
-									<div class="row">
-											<div class="col-md-4">
-												<label for="contact:company">Your Company *</label>
-												<input required type="text" value="" class="form-control" name="contact[company]" id="contact:company">
-											</div>
-											<div class="col-md-4">
-												<label for="contact:project">Project Name</label>
-												<input required type="text" value="" class="form-control" name="contact[project]" id="contact:project">
-											</div>
-											<div class="col-md-4">
-												<label for="contact:description">Project Description</label>
-												<input type="text" value="" class="form-control" name="contact[description]" id="contact:description">
-											</div>
-									</div>
-									<div class="row">
-											<div class="col-md-8">
-												<label for="contact:subject">Subject *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
-											</div>
-											<div class="col-md-4">
-												<label for="contact_department">Department</label>
-												<select class="form-control pointer" name="contact[department]">
-													<option value="">--- Select ---</option>
-													<option value="Corporate">Corporate</option>
-													<option value="Residential">Residential</option>
-													<option value="General Information">General Information</option>
-												</select>
-											</div>
-									</div>
-                                    
-									<div class="row">
-											<div class="col-md-12">
-												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message][required]" id="contact:message"></textarea>
-											</div>
-									</div>
-									<div class="row">
-											<div class="col-md-12">
-												<label for="contact:attachment">File Attachment</label>
-
-												<!-- custom file upload -->
-												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
-												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
-
-											</div>
-									</div>
-
-								</fieldset>
-
-								<div class="row">
-									<div class="col-md-12">
-										<button type="submit" class="btn btn-blue" onlick = "confirmationAlert()"><i class="fa fa-check"></i> SEND MESSAGE</button>
-								<script>
-									function confirmationAlert() {
-										alert("Thank you for your inquiry. We will respond as soon as possible.");
-									}
-								</script>	
-								</div>
-							</div>
-						</div>
-						<!-- /FORM -->
-
-
-						<!-- INFO -->
-						<div class="col-md-4 col-sm-4">
-
-							<h2>Visit Us</h2>
-
-							<!-- 
-							Available heights
-								h-100
-								h-150
-								h-200
-								h-250
-								h-300
-								h-350
-								h-400
-								h-450
-								h-500
-								h-550
-								h-600
-							-->
-							<div id="map2" class="h-300 "><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.042993779444!2d-71.2818781219101!3d46.84284354852155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb897d0e1cafe3f%3A0x9863b2d992c71670!2sCodeBoxx!5e0!3m2!1sen!2sus!4v1610653390925!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-
-							<hr />
-
-							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 418-725 Boulevard Lebourgneuf, Québec, QC G2J 0C4, Canada</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1-418-555-1234">1-418-555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
-							</p>
-
-						</div>
-						<!-- /INFO -->
-
-					</div>
-
-				</div>
-			</section>
-			<!-- /CONTACT -->
-
-
-
-
-			<!-- FOOTER -->
+	<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
-
 
 					<div class="row">
 
@@ -551,45 +404,22 @@
 			</footer>
 			<!-- /FOOTER -->
 
-		</div>
-		<!-- /wrapper -->
-
 
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
 
 
-		<!-- PRELOADER -->
-		<div id="preloader">
-			<div class="inner">
-				<span class="loader"></span>
-			</div>
-		</div><!-- /PRELOADER -->
-
 
 		<!-- JAVASCRIPT FILES -->
-		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js">
+			</script>
 
 		<script src="assets/js/scripts.js"></script>
-		
-		<!-- STYLESWITCHER - REMOVE>
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script-->
-
-		<!-- REVOLUTION SLIDER -->
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="assets/js/view/demo.revolution_slider.js"></script>
 
 		<!-- PAGELEVEL SCRIPTS -->
 		<script src="assets/js/contact.js"></script>
 
-		<!-- 
-			GMAP.JS 
-			http://hpneo.github.io/gmaps/
-		-->
-		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
-		<script src="assets/plugins/gmaps.js"></script>
 		
 	</body>
 </html>

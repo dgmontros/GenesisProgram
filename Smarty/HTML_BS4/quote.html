@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Rocket Elevators</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
-		<!-- mobile settings -->
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Rocket Elevators</title>
+	<meta name="description" content="" />
+	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
-		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- WEB FONTS : use %7C instead of | (pipe) -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+		rel="stylesheet" type="text/css" />
 
-	
+	<!-- CORE CSS -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+	<!-- JQUERY reference FKA PAGELEVEL SCRIPTS -->
 
-		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-	</head>
+	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-3.3.1.min.map"></script>
+	<script src="assets/js/scripts.js"></script>
 
-	<!--
+	<script src="assets/js/scripts.js"></script>
+
+	<!-- Quote Builder Form -->
+
+
+	<!-- Quote builder form -->
+
+	<!-- THEME CSS -->
+	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	<style>
+		.hidden {
+			display: none;
+		}
+
+		.display { 
+			display: inline-block;
+		}
+	</style>
+</head>
+
+<!--
 		AVAILABLE BODY CLASSES:
 		
 		smoothscroll 			= create a browser smooth scroll
@@ -47,15 +70,15 @@
 		
 		BACKGROUND IMAGE [together with .boxed class]
 	-->
-	<!--body class="smoothscroll enable-animation">
+<!--body class="smoothscroll enable-animation">
 
 		<-- SLIDE TOP -->
 
 
-		<!-- wrapper -->
-		<div id="wrapper">
+<!-- wrapper -->
+<div id="wrapper">
 
-			<!--
+	<!--
 				AVAILABLE HEADER CLASSES
 
 				Default nav height: 96px
@@ -81,345 +104,344 @@
 
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
-			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+	<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
-				<!-- TOP NAV -->
-				<header id="home-nav">
-					<div class="container">
+		<!-- TOP NAV -->
+		<header id="home-nav">
+			<div class="container">
 
-						<!-- Mobile Menu Button >
+				<!-- Mobile Menu Button >
 						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
 							<i class="fa fa-bars"></i>
 						</button-->
 
-						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="../HTML_BS4/index.html">
-							<img src="assets/images/R2.png" alt="Rocket Elevators Blue and White logo" />
-						</a>
+				<!-- Logo -->
+				<a class="logo float-left scrollTo" href="../HTML_BS4/index.html">
+					<img src="assets/images/R2.png" alt="Rocket Elevators Blue and White logo" />
+				</a>
 
-						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-							<nav class="nav-main">
+				<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+					<nav class="nav-main">
 
-								<!-- 
+						<!-- 
 									.nav-onepage
 									Required for onepage navigation links
 									
 									Add .external for an external link!
 								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
-										<a id="home-nav" href="../HTML_BS4/index.html">
-											HOME
-										</a>
-									</li>
-									<li><!-- SERVICES -->
-										<a id="services-nav" href="#services">
-											SERVICES
-										</a>
-									</li>
-									<li><!-- PORTFOLIO -->
-										<a id="portfolio-nav" href="#portfolio">
-											PORTFOLIO
-										</a>
-									</li>
-									<li><!-- NEWS -->
-										<a id="news-nav" href="#news">
-											NEWS
-										</a>
-									</li>
-									<li><!-- OVERVIEW -->
-										
-										</a>
-									</li>
-									<li><!-- CLIENTS -->
-										<a id="clients-nav" href="#clients">
-											CLIENTS
-										</a>
-									</li>
-									<li><!-- CONTACT -->
-										<a id="contact-nav" href="#contact">
-											CONTACT
-										</a>
-									</li>
-								</ul>
+						<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+							<li class="active">
+								<!-- HOME -->
+								<a id="home-nav" href="../HTML_BS4/index.html">
+									HOME
+								</a>
+							</li>
+							<li>
+								<!-- SERVICES -->
+								<a id="services-nav" href="#services">
+									SERVICES
+								</a>
+							</li>
+							<li>
+								<!-- PORTFOLIO -->
+								<a id="portfolio-nav" href="#portfolio">
+									PORTFOLIO
+								</a>
+							</li>
+							<li>
+								<!-- NEWS -->
+								<a id="news-nav" href="#news">
+									NEWS
+								</a>
+							</li>
+							<li>
+								<!-- OVERVIEW -->
 
-							</nav>
-						</div>
+								</a>
+							</li>
+							<li>
+								<!-- CLIENTS -->
+								<a id="clients-nav" href="#clients">
+									CLIENTS
+								</a>
+							</li>
+							<li>
+								<!-- CONTACT -->
+								<a id="contact-nav" href="#contact">
+									CONTACT
+								</a>
+							</li>
+						</ul>
 
-					</div>
-				</header>
+					</nav>
+				</div>
 
 			</div>
+		</header>
 
-			
-			<!-- BUTTON CALLOUT -->
-			<hr class="m-0" />
+	</div>
 
+
+	<!-- BUTTON CALLOUT -->
+	<header>
+	<div class="container">
+		<div class="row">
 			<section id="selectProject">
-				<div class="container">
-
-					<header class="text-center mb-20">
-						<h2>Please Select a Building Type:  </h2>
-
-						<select id="selectBuilding" onchange=selectForm>
+				<header class="text-center mb-20">
+					<h2>Please Select a Building Type: </h2>
+					<script type="text/javascript" src="draftQuote.js"></script>
+					<select id="selectBuilding" onchange="selectForm()">
 						<option value="select">-select one-</option>
-						<option value="residential">Residential</option>
-						<option value="commercial">Commercial</option>
-						<option value="corporate">Corporate</option>
-						<option value="hybrid">Hybrid</option>
+						<option id="residential" value="residential">Residential</option>
+						<option id="commercial" value="commercial">Commercial</option>
+						<option id="corporate" value="corporate">Corporate</option>
+						<option id="hybrid" value="hybrid">Hybrid</option>
 					</select>
-					</header>
-					<div class="row">
-						
-						<script>  
-	{  
-		var residential = selectBuilding.type(residential);
-		var residentialOuput = ["number-of-apartments", "number-of-floors", "number-of-basements"]
-	};
-{  
-		var commercial = selectBuilding.type(commercial)
-		var commercialOutput = ["number-of-floors", "number-of-basements", "number-of-companies", "number-of-parking-spots", "number-of-elevators"]
-	};
-{  
-		var corporate = selectBuilding.type(corporate);
-		var corporateOutput= ["number-of-floors", "number-of-basements", "number-of-parking-spots", "number-of-corporations", "maximum-occupancy"]
-	};
-{  
-		var hybrid = selectBuilding.type(hybrid);
-		var hybridOutput = ["number-of-floors", "number-of-basements", "number-of-companies","number-of-parking-spots", "maximum-occupancy", "business-hours"]
-	}
-
-selectBuilding.onchange = selectForm() {
-  if selectBuilding.type=residential {
-    quote.getElementById(residential)
-}
-  else if selectBuilding.type=commercial {
-    quote.getElementById(commercial)
-}
-  else if selectBuilding.type=corporate {
-    quote.getElementById(corporate)
-}
-  else if selectBuilding.type=hybrid {
-    quote.getElementById(hybrid)
-};
-
-selectForm();
-
-						</script>
-				
-
+	</header>
+	<div class="container">
+		<div class="row">
 			<section id="selectService">
-				<div class="container">
 
-					<header class="text-center mb-20">
-						<h2>Please Select a Quality Level:  </h2>
+				<header class="text-center mb-20">
+					<h2>Please Select a Quality Level: </h2>
 						<hr />
 						<select id="selectQuality">
-						<option value="select"> -select one-</option>
-						<option value="standard">Standard</option>
-						<option value="premium">Premium</option>
-						<option value="excelium">Excelium</option>
+							<option value="select"> -select one-</option>
+							<option value="standard">Standard</option>
+							<option value="premium">Premium</option>
+							<option value="excelium">Excelium</option>
 					</select>
-					</header>
-					<div class="row">
-					</select>
-					<!-- FINISH CODE FOR BUILDING AND QUALITY SELECTION-->
+				</header>
+								</select>
+
+								<!--RESIDENTIAL FIELD-->
+								<section id="residentialForm" style="display:none;">
+									<label for="num-apartments">Number of Apartments:
+										<input type="text" value="10" name="residential-options" id="num-apartments"
+											min="1" max="1000" class="form-control stepper">
+									</label>
+
+									<label for="num-floors">Number of Floors:
+										<input type="text" value="2" name="residential-options" id="num-floors" min="1"
+											max="100" class="form-control stepper">
+									</label>
+
+									<label for="num-basements">Number of Basements:
+										<input type="text" value="1" name="residential-options" id="num-basements"
+											min="0" max="10" class="form-control stepper">
+									</label>
+								</section>
+								<!--END RESIDENTIAL-->
+
+								<!--START COMMERCIAL FIELD -->
+								<section id="commercialForm" style="display:none;">
+									<label for="num-businesses">Number of Distinct Businesses:
+										<input type="text" value="10" name="commercial-options" id="num-businesses"
+											min="0" max="500" class="form-control stepper">
+									</label>
+
+									<label for="num-floors">Number of Floors:
+										<input type="text" value="2" name="commercial-options" id="num-floors" min="0"
+											max="100" class="form-control stepper">
+									</label>
+
+									<label for="num-basements">Number of Basements:
+										<input type="text" value="1" name="commercial-options" id="num-basements"
+											min="0" max="10" class="form-control stepper">
+									</label>
+
+									<label for="num-parking">Number of Parking Spaces:
+										<input type="text" value="50" name="commercial-options" id="num-parking" min="0"
+											max="1000" class="form-control stepper">
+									</label>
+
+									<label for="num-elevators">Number Elevator Cages per Floor:
+										<input type="text" value="1" name="commercial-options" id="num-elevators"
+											min="1" max="20" class="form-control stepper">
+									</label>
+
+									<!--END COMMERCIAL-->
+								</section>
+								<!--START CORPORATE FIELD-->
+								<section id="corporateForm" style="display:none;">
+									<label for="num-businesses">Number of Distinct Businesses:
+										<input type="text" value="10" name="corporate-options" id="num-businesses"
+											min="0" max="500" class="form-control stepper">
+									</label>
+
+									<label for="num-floors">Number of Floors:
+										<input type="text" value="2" name="corporate-options" id="num-floors" min="0"
+											max="100" class="form-control stepper">
+									</label>
+
+									<label for="num-basements">Number of Basements:
+										<input type="text" value="1" name="corporate-options" id="num-basements" min="0"
+											max="10" class="form-control stepper">
+									</label>
+
+									<label for="num-parking">Number of Parking Spaces:
+										<input type="text" value="50" name="corporate-options" id="num-parking" min="0"
+											max="1000" class="form-control stepper">
+									</label>
+
+									<label for="max-occupants">Maximum Individual Occupants Per Floor:
+										<input type="text" value="1" name="corporate-options" id="max-occupants" min="1"
+											max="1000" class="form-control stepper">
+									</label>
+								</section>
+								<!--END CORPORATE-->
+
+								<!--START HYBRID FIELD-->
+								<section id="hybridForm" style="display:none;">
+									<label for="num-businesses">Number of Distinct Businesses:
+										<input type="text" value="10" name="hybrid-options" id="num-businesses" min="0"
+											max="500" class="form-control stepper">
+									</label>
+
+									<label for="num-floors">Number of Floors:
+										<input type="text" value="2" name="hybrid-options" id="num-floors" min="0"
+											max="100" class="form-control stepper">
+									</label>
+
+									<label for="num-basements">Number of Basements:
+										<input type="text" value="1" name="hybrid-options" id="num-basements" min="0"
+											max="10" class="form-control stepper">
+									</label>
+
+									<label for="num-parking">Number of Parking Spaces:
+										<input type="text" value="50" name="hybrid-options" id="num-parking" min="0"
+											max="1000" class="form-control stepper">
+									</label>
+
+									<label for="max-occupants">Maximum Individual Occupants Per Floor:
+										<input type="text" value="1" name="hybrid-options" id="max-occupants" min="1"
+											max="1000" class="form-control stepper">
+									</label>
+
+									<label for="hrs-activity">Daily Hours of Occupation:
+										<input type="text" value="1" name="hybrid-options" id="hrs-activity" min="0"
+											max="24" class="form-control stepper">
+									</label>
+									<!--END HYBRID-->
+
+								</section>
+
+								<!-- FOOTER -->
+								<footer id="footer">
+									<div class="container">
+
+										<div class="row">
+
+											<!-- col #1 -->
+											<div class="col-md-8">
+
+												<h3 class="letter-spacing-1">WHY US?</h3>
+
+												<!-- Small Description -->
+												<p>
+													We have the conviction that we create the most innovative
+													and reliable products on the market. Contact us today for
+													any questions you might have.
+												</p>
+												<h2>(418) 555-1234</h2>
+											</div>
+											<!-- /col #1 -->
+
+											<!-- col #2 -->
+											<div class="col-md-4">
+												<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+												<!-- Newsletter Form -->
+												<p>Subscribe to Our Newsletter to get Important News & Offers
+												</p>
+
+												<form class="validate" action="php/newsletter.php" method="post"
+													data-success="Subscribed! Thank you!"
+													data-toastr-position="bottom-right">
+													<div class="input-group">
+														<span class="input-group-addon"><i
+																class="fa fa-envelope"></i></span>
+														<input type="email" id="email" name="email"
+															class="form-control required"
+															placeholder="Enter your Email">
+														<span class="input-group-btn">
+															<button class="btn btn-blue"
+																type="submit">Subscribe</button>
+														</span>
+													</div>
+												</form>
+												<!-- /Newsletter Form -->
+
+
+											</div>
+											<!-- /col #2 -->
+
+										</div>
+
+
+									</div>
+
+									<div class="copyright">
+										<div class="container">
+											<ul class="float-right m-0 list-inline mobile-block">
+												<li><a href="#">Terms &amp; Conditions</a></li>
+												<li>&bull;</li>
+												<li><a href="#">Privacy</a></li>
+											</ul>
+											&copy; All Rights Reserved, Rocket Elevators LTD
+										</div>
+									</div>
+
+								</footer>
+								<!-- /FOOTER -->
+
+
+								<!-- SCROLL TO TOP -->
+								<a href="#" id="toTop"></a>
 
 
 
- <div id="residential" class="building_type" >
-   
-</div>
-    
- <div id="commercial" class="building_type" >
-	
- </div>
- <div id="corporate" class="building_type" >
-   
-</div>
-<div id="Hybrid" class="building_type" >
-  
-</div>
-	
+								<!-- JAVASCRIPT FILES -->
+								<!--console says 'plugin path not defined at html document ReferenceError: plugin_path is not defined
+    at HTMLDocument.<anonymous> (scripts.js:59)
+    at l (jquery-3.3.1.min.js:2)
+    at c (jquery-3.3.1.min.js:2)
+(anonymous) @ scripts.js:59
+l @ jquery-3.3.1.min.js:2
+c @ jquery-3.3.1.min.js:2
+setTimeout (async)
+w.readyException @ jquery-3.3.1.min.js:2
+(anonymous) @ jquery-3.3.1.min.js:2
+l @ jquery-3.3.1.min.js:2
+c @ jquery-3.3.1.min.js:2
+setTimeout (async)
+(anonymous) @ jquery-3.3.1.min.js:2
+u @ jquery-3.3.1.min.js:2
+fireWith @ jquery-3.3.1.min.js:2
+fire @ jquery-3.3.1.min.js:2
+u @ jquery-3.3.1.min.js:2
+fireWith @ jquery-3.3.1.min.js:2
+c @ jquery-3.3.1.min.js:2
+setTimeout (async)
+(anonymous) @ jquery-3.3.1.min.js:2
+u @ jquery-3.3.1.min.js:2
+fireWith @ jquery-3.3.1.min.js:2
+fire @ jquery-3.3.1.min.js:2
+u @ jquery-3.3.1.min.js:2
+fireWith @ jquery-3.3.1.min.js:2
+ready @ jquery-3.3.1.min.js:2
+_ @ jquery-3.3.1.min.js:2'.   
 
-            <!-- Quote Builder Form >
-            
-              <div class="container">       
-            <script src="draftQuote.js"></script>
-                </div>
+VERIFIED CORRECT PATH, and placed in header:  assets/plugins/jquery/jquery-3.3.1.min.js-->
 
-< Quote builder form -->
+<script src="draftQuote.js"></script>
 
-<!--INPUT CATEGORIES-->	
-		<!--RESIDENTIAL-->	
-<section id="residential-form" class="conditional-form hidden">
-	<label for="num-apartments">Number of Apartments:
-	<input type="text" value="10" name="residential-options" id="num-apartments" min="1" max="1000" class="form-control stepper">
-	</label>
-	
-	<label for="num-floors">Number of Floors:
-		<input type="text" value="2" name="residential-options" id="num-floors" min="1" max="100" class="form-control stepper">
-	</label>
-	
-	<label for="num-basements">Number of Basements:
-		<input type="text" value="1" name="residential-options" id="num-basements" min="0" max="10" class="form-control stepper">
-	</label>	
+								</body>
 
-	<!--END RESIDENTIAL-->	
-
-	<!--START COMMERCIAL-->	
-<section id="commercial-form" class="conditional-form hidden">
-	<label for="num-businesses">Number of Distinct Businesses:
-	<input type="text" value="10" name="commercial-options" id="num-businesses" min="0" max="500" class="form-control stepper">
-	</label>
-	
-	<label for="num-floors">Number of Floors:
-		<input type="text" value="2" name="commercial-options" id="num-floors" min="0" max="100" class="form-control stepper">
-	</label>
-	
-	<label for="num-basements">Number of Basements:
-		<input type="text" value="1" name="commercial-options" id="num-basements" min="0" max="10" class="form-control stepper">
-	</label>	
-		
-	<label for="num-parking">Number of Parking Spaces:
-		<input type="text" value="50" name="commercial-options" id="num-parking" min="0" max="1000" class="form-control stepper">
-		</label>
-		
-		<label for="num-elevators">Number Elevator Cages per Floor:
-			<input type="text" value="1" name="commercial-options" id="num-elevators" min="1" max="20" class="form-control stepper">
-		</label>
-
-	<!--END COMMERCIAL-->	
-
-	<!--START CORPORATE -->	
-<section id="corporate-form" class="conditional-form hidden">
-	<label for="num-businesses">Number of Distinct Businesses:
-	<input type="text" value="10" name="corporate-options" id="num-businesses" min="0" max="500" class="form-control stepper">
-	</label>
-	
-	<label for="num-floors">Number of Floors:
-		<input type="text" value="2" name="corporate-options" id="num-floors" min="0" max="100" class="form-control stepper">
-	</label>
-	
-	<label for="num-basements">Number of Basements:
-		<input type="text" value="1" name="corporate-options" id="num-basements" min="0" max="10" class="form-control stepper">
-	</label>	
-		
-	<label for="num-parking">Number of Parking Spaces:
-		<input type="text" value="50" name="corporate-options" id="num-parking" min="0" max="1000" class="form-control stepper">
-		</label>
-		
-		<label for="max-occupants">Maximum Individual Occupants Per Floor:
-			<input type="text" value="1" name="corporate-options" id="max-occupants" min="1" max="1000" class="form-control stepper">
-		</label>
-
-	<!--END CORPORATE-->
-
-	<!--START HYBRID-->	
-	<section id="hybrid-form" class="conditional-form hidden">
-		<label for="num-businesses">Number of Distinct Businesses:
-		<input type="text" value="10" name="hybrid-options" id="num-businesses" min="0" max="500" class="form-control stepper">
-		</label>
-		
-		<label for="num-floors">Number of Floors:
-			<input type="text" value="2" name="hybrid-options" id="num-floors" min="0" max="100" class="form-control stepper">
-		</label>
-		
-		<label for="num-basements">Number of Basements:
-			<input type="text" value="1" name="hybrid-options" id="num-basements" min="0" max="10" class="form-control stepper">
-		</label>	
-			
-		<label for="num-parking">Number of Parking Spaces:
-			<input type="text" value="50" name="hybrid-options" id="num-parking" min="0" max="1000" class="form-control stepper">
-			</label>
-			
-			<label for="max-occupants">Maximum Individual Occupants Per Floor:
-				<input type="text" value="1" name="hybrid-options" id="max-occupants" min="1" max="1000" class="form-control stepper">
-			</label>
-			
-			<label for="hrs-activity">Daily Hours of Occupation:
-				<input type="text" value="1" name="hybrid-options" id="hrs-activity" min="0" max="24" class="form-control stepper">
-			</label>
-	<!--END HYBRID-->	
-
-	</section>
-
-	<!-- FOOTER -->
-			<footer id="footer">
-				<div class="container">
-
-					<div class="row">
-
-						<!-- col #1 -->
-						<div class="col-md-8">
-
-							<h3 class="letter-spacing-1">WHY US?</h3>
-
-							<!-- Small Description -->
-							<p>
-								We have the conviction that we create the most innovative and reliable products on the market.  Contact us today for any questions you might have.
-							</p>
-							<h2>(418) 555-1234</h2>
-						</div>
-						<!-- /col #1 -->
-
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-blue" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
-
-					</div>
-
-
-				</div>
-
-				<div class="copyright">
-					<div class="container">
-						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-						&copy; All Rights Reserved, Rocket Elevators LTD
-					</div>
-				</div>
-
-			</footer>
-			<!-- /FOOTER -->
-
-
-		<!-- SCROLL TO TOP -->
-		<a href="#" id="toTop"></a>
-
-
-
-		<!-- JAVASCRIPT FILES -->
-
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js">
-			</script>
-
-		<script src="assets/js/scripts.js"></script>
-
-		<!-- PAGELEVEL SCRIPTS -->
-		<script src="assets/js/contact.js"></script>
-
-		
-	</body>
 </html>
+
+<!-- ALSO FROM CONSOLE: 
+
+Uncaught reference error: selectBuilding is not defined at quote.html:161
+
+Uncaught TypeError: selectBuilding.type is not a funciton at quote.html:190<-->
